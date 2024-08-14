@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kjwwrytu&jx*co+5n17@3n_4rcdqs20o&7r(zc%$=ersmfz12+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app','now.sh']
 
 
 # Application definition
@@ -73,13 +73,6 @@ WSGI_APPLICATION = 'CarHub.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
