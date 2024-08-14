@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hub®️</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <div id="nav">
+        <img src="http://www.car-brand-names.com/wp-content/uploads/2015/05/Mercedes-symbol.jpg" alt="">
+
+        <div id="nav-part2">
+            <a href="{% url 'mercedes' %}">Mercedes</a>
+            <a href="{% url 'lamborgini' %}">Lamborgini</a>
+            <a href="{% url 'ferrari' %}">Ferrari</a>
+            <a href="{% url 'index' %}">BMW</a>
+        </div>
+        
+
+        <div id="nav-part3">
+            <div id="circle"></div>
+        </div>
+
+    </div>
+
+    <!-- purple -->
+    <div id="purple"></div>
+
+    <div id="main">
+
+        <!-- Page 1 -->
+        <div id="page1">
+            <h1>I spend on</h1>
+            <h2>Vintage</h2>
+
+            <video autoplay muted loop src="{% static 'videos/Mercedes-AMG.mp4' %}"></video>
+        </div>
+
+        <!-- Page 2 -->
+
+        <div id="page2">
+            <h1>Welcome to Mercedes-AMG</h1>
+                <div id="page2-container">
+                    <div id="page2-left">
+                        <h2>A CAR
+                            WHICH MAKES
+                            YOU FEEL
+                            VINTAGE.
+                        </h2>
+                    </div>
+
+                    <div id="page2-right">
+                        <p>The Mercedes-AMG C63 Competition is a rocket on wheels, capable of hitting 100 kmph in under 3.5 seconds thanks to its potent hybrid powertrain. This high-performance sedan seamlessly blends electrifying speed with luxurious comfort, offering an unparalleled driving experience that's both thrilling and refined.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div id="page3">
+            <h1>Mercedes AMG C63 </h1>
+            <div id="page3-part1">
+                <img src="{% static 'images/AMG1.webp' %}" alt="">
+
+                <video autoplay loop muted src="{% static 'videos/C63 2nd.mp4' %} "></video>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

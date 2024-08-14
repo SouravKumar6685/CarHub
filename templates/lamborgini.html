@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hub®️</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <!-- NavBar -->
+     <div id="nav">
+        <img src="https://tse4.mm.bing.net/th?id=OIF.lMJi4%2fJcOR3atFaomuVypA&pid=Api&P=0&h=180" alt="">
+
+        <div id="nav-part2">
+            <a href="{% url 'mercedes' %}">Mercedes</a>
+            <a href="{% url 'lamborgini' %}">Lamborgini</a>
+            <a href="{% url 'ferrari' %}">Ferrari</a>
+            <a href="{% url 'index' %}">BMW</a>
+        </div>
+        
+
+        <div id="nav-part3">
+            <div id="circle"></div>
+        </div>
+     </div>
+
+    <!-- purple -->
+    <div id="purple"></div>
+    
+    
+     <div id="main">
+
+        <!-- Page1 -->
+        <div id="page1">
+            <h1>We are made to</h1>
+            <h2>Grab Attention</h2>
+            <video autoplay muted loop src="{% static 'videos/Lamborghini.mp4' %}"></video>
+        </div>
+
+
+        <div id="page2">
+            <h1>Welcome to Lamborgini!</h1>
+                <div id="page2-container">
+                    <div id="page2-left">
+                        <h2>A CAR
+                            WHICH MAKES
+                            YOU FEEL
+                            Superior.
+                        </h2>
+                    </div>
+
+                    <div id="page2-right">
+                        <p>The Lamborghini Revuelto is a breathtaking hypercar that can catapult from 0 to 100 kmph in a mind-boggling 2.5 seconds.
+
+                            This electrified masterpiece combines the raw power of a V12 engine with the cutting-edge technology of hybrid propulsion, delivering an unparalleled driving experience that blends speed, luxury, and innovation.</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Page 3 -->
+         <div id="page3">
+            <h1>Lamborgini Revuelto </h1>
+            <div id="page3-part1">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Qk5soKioIjPEV1bXuK8lBwHaE8&pid=Api&P=0&h=180" alt="">
+
+                <video autoplay loop muted src="{% static 'videos/2024-lamborghini.mp4' %}"></video>
+            </div>
+         </div>
+
+        <!-- Page 4 -->
+         <div id="page4">
+
+            <div id="elem">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.T4GGRFRC0Rz-XiDyVW5WnAHaEK&pid=Api&P=0&h=180" alt="">
+
+                <div id="text-div">
+                    <h1>Luxurious</h1>
+                    <h1>Luxurious</h1>
+                </div>
+
+                <img src="https://tse3.mm.bing.net/th?id=OIP.A3Fb99_RpTRVDr1-fzxTmAHaFj&pid=Api&P=0&h=180" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.T4GGRFRC0Rz-XiDyVW5WnAHaEK&pid=Api&P=0&h=180" alt="">
+
+                <div id="text-div">
+                    <h1>Powerful</h1>
+                    <h1>Powerful</h1>
+                </div>
+
+                <img src="https://tse3.mm.bing.net/th?id=OIP.A3Fb99_RpTRVDr1-fzxTmAHaFj&pid=Api&P=0&h=180" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.T4GGRFRC0Rz-XiDyVW5WnAHaEK&pid=Api&P=0&h=180" alt="">
+
+                <div id="text-div">
+                    <h1>Dynamic</h1>
+                    <h1>Dynamic</h1>
+                </div>
+
+                <img src="https://tse3.mm.bing.net/th?id=OIP.A3Fb99_RpTRVDr1-fzxTmAHaFj&pid=Api&P=0&h=180" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.T4GGRFRC0Rz-XiDyVW5WnAHaEK&pid=Api&P=0&h=180" alt="">
+
+                <div id="text-div">
+                    <h1>Prestigious</h1>
+                    <h1>Prestigious</h1>
+                </div>
+
+                <img src="https://tse3.mm.bing.net/th?id=OIP.A3Fb99_RpTRVDr1-fzxTmAHaFj&pid=Api&P=0&h=180" alt="">
+            </div>
+
+
+         </div> 
+
+         <footer>
+
+         </footer>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

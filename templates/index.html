@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Hub®️</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <!-- NavBar -->
+     <div id="nav">
+        <img src="https://www.hdwallpaper.nu/wp-content/uploads/2015/10/bmw_wallpaper_002.jpg" alt="">
+
+        <div id="nav-part2">
+            <a href="{% url 'mercedes' %}">Mercedes</a>
+            <a href="{% url 'lamborgini' %}">Lamborgini</a>
+            <a href="{% url 'ferrari' %}">Ferrari</a>
+            <a href="{% url 'index' %}">BMW</a>
+        </div>
+        
+
+        <div id="nav-part3">
+            <div id="circle"></div>
+        </div>
+     </div>
+
+    <!-- purple -->
+    <div id="purple"></div>
+    
+    
+     <div id="main">
+
+        <!-- Page1 -->
+        <div id="page1">
+            <h1>Drop a gear</h1>
+            <h2>and Disappear</h2>
+            <video autoplay muted loop src="{% static 'videos/BMW.mp4' %}"></video>
+        </div>
+
+
+        <div id="page2">
+            <h1>Welcome to BMW Airways!</h1>
+                <div id="page2-container">
+                    <div id="page2-left">
+                        <h2>A CAR
+                            WHICH MAKES
+                            YOU FEEL
+                            COMPLETE.
+                        </h2>
+                    </div>
+
+                    <div id="page2-right">
+                        <p>The BMW M4 Competition is a beast on the road, capable of hitting 100 kmph in a mere 3.5 seconds thanks to its ferocious 530 horsepower engine.
+
+                            This high-performance coupe is not just about speed; it's an embodiment of luxury, precision handling, and cutting-edge technology, making every drive an exhilarating experience.</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Page 3 -->
+         <div id="page3">
+            <h1>BMW M4 Competition </h1>
+            <div id="page3-part1">
+                <img src="{% static 'images/4th.jpg' %}" alt="">
+
+                <video autoplay loop muted src="{% static 'videos/Competition.mp4' %}"></video>
+            </div>
+         </div>
+
+        <!-- Page 4 -->
+         <div id="page4">
+
+            <div id="elem">
+                <img src="{% static 'images/2nd.jpg' %}" alt="">
+
+                <div id="text-div">
+                    <h1>Luxurious</h1>
+                    <h1>Luxurious</h1>
+                </div>
+
+                <img src="{% static 'images/3rd.jpg' %}" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="{% static 'images/2nd.jpg' %}" alt="">
+
+                <div id="text-div">
+                    <h1>Powerful</h1>
+                    <h1>Powerful</h1>
+                </div>
+
+                <img src="{% static 'images/3rd.jpg' %}" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="{% static 'images/2nd.jpg' %}" alt="">
+
+                <div id="text-div">
+                    <h1>Dynamic</h1>
+                    <h1>Dynamic</h1>
+                </div>
+
+                <img src="{% static 'images/3rd.jpg' %}" alt="">
+            </div>
+
+            <div id="elem">
+                <img src="{% static 'images/2nd.jpg' %}" alt="">
+
+                <div id="text-div">
+                    <h1>Prestigious</h1>
+                    <h1>Prestigious</h1>
+                </div>
+
+                <img src="{% static 'images/3rd.jpg' %}" alt="">
+            </div>
+
+
+         </div> 
+
+         <footer>
+
+         </footer>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
